@@ -1,2 +1,4 @@
+package util
+
 interface DTO {
 }

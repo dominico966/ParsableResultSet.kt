@@ -3,15 +3,16 @@ plugins {
 }
 
 group 'com.github.dominico966'
-version 'v0.1.3-alpha'
+version 'v0.1.4-alpha'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-    compile "org.jetbrains.kotlin:kotlin-reflect"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    implementation "org.jetbrains.kotlin:kotlin-reflect"
 }
 
 compileKotlin {
